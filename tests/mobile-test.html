@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Responsiveness Test - The Krant</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .test-title {
+            color: #1a365d;
+            margin-bottom: 1rem;
+        }
+        .device-simulator {
+            border: 3px solid #333;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 1rem 0;
+        }
+        .mobile-view {
+            width: 375px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .tablet-view {
+            width: 768px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1 class="test-title">Mobile Responsiveness Test</h1>
+        
+        <div class="test-section">
+            <h2>Mobile View Simulation (375px)</h2>
+            <div class="device-simulator mobile-view">
+                <div class="news-grid">
+                    <article class="news-article">
+                        <h3>Test Article with Very Long Title That Might Cause Width Issues on Mobile Devices</h3>
+                        <div class="content">
+                            <p>This is a test paragraph with normal text content that should wrap properly on mobile devices.</p>
+                            <p>Here's a paragraph with a very long word: supercalifragilisticexpialidocious and some more text to test word wrapping.</p>
+                            <p>Testing with a long URL: https://www.example.com/very/long/path/that/might/cause/horizontal/scrolling/issues/on/mobile/devices</p>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjY2NjIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPjQwMHgyMDA8L3RleHQ+PC9zdmc+" alt="Test image">
+                            <table>
+                                <tr>
+                                    <th>Column 1</th>
+                                    <th>Column 2</th>
+                                    <th>Column 3</th>
+                                    <th>Column 4</th>
+                                </tr>
+                                <tr>
+                                    <td>Data 1</td>
+                                    <td>Data 2</td>
+                                    <td>Data 3</td>
+                                    <td>Data 4</td>
+                                </tr>
+                            </table>
+                            <pre>This is preformatted text that might have very long lines that could cause horizontal scrolling issues on mobile devices if not handled properly.</pre>
+                        </div>
+                        <div class="news-meta">
+                            Test Article • Mobile Responsiveness Check
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>Tablet View Simulation (768px)</h2>
+            <div class="device-simulator tablet-view">
+                <div class="news-grid">
+                    <article class="news-article">
+                        <h3>Tablet Test Article</h3>
+                        <div class="content">
+                            <p>This content should display properly on tablet devices with appropriate spacing and layout.</p>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzMzMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPjYwMHgzMDA8L3RleHQ+PC9zdmc+" alt="Tablet test image">
+                        </div>
+                        <div class="news-meta">
+                            Tablet Test • Responsive Design
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Open this page in your browser</li>
+                <li>Use browser developer tools to simulate different device sizes</li>
+                <li>Check for horizontal scrolling issues</li>
+                <li>Verify that all content stays within viewport bounds</li>
+                <li>Test on actual mobile devices if possible</li>
+            </ol>
+        </div>
+    </div>
+    <script src="mobile-test.js"></script>
+</body>
+</html>
